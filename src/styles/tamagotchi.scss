@@ -4,16 +4,15 @@ $egg-radius: 54% / 65% 65% 47% 47%;
 $accent-main: #7b41d8;
 $body-shadow: darken($body-main, 12%);
 
-
-// Colors 
-$black:  #0f0f0f;
+// Colors
+$black: #0f0f0f;
 $white: #fdfdfd;
 $screen-black: #6c6c4e;
 $screen-white: #e3e6c9;
 $background: #fcf8ec;
 
-.body{
-    width: 256px;
+.body {
+  width: 256px;
   height: 310px;
   background: $body-main;
   text-align: center;
@@ -23,7 +22,7 @@ $background: #fcf8ec;
   left: 50%;
   transform: translate(-50%, -50%);
   user-select: none;
-  box-shadow: 10px 10px 40px -20px rgba(0,0,0,0.4);
+  box-shadow: 10px 10px 40px -20px rgba(0, 0, 0, 0.4);
 }
 
 .buttons {
@@ -32,7 +31,6 @@ $background: #fcf8ec;
   width: 100%;
   text-align: center;
 }
-
 
 .button {
   display: inline-block;
@@ -46,16 +44,15 @@ $background: #fcf8ec;
   margin: 8px 10px;
   border: 2px solid darken($accent-main, 2%);
   box-shadow: 1px 1px 3px 2px darken($body-shadow, 9%);
-  transition:  background-color 200ms ease,
-              box-shadow 200ms ease;
-  
+  transition: background-color 200ms ease, box-shadow 200ms ease;
+
   &:active {
     background-color: darken($accent-main, 3%);
     box-shadow: 1px 1px 6px 2px darken($body-shadow, 8%);
   }
-  
+
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
@@ -66,40 +63,38 @@ $background: #fcf8ec;
     box-shadow: 0 0 15px 2px lighten($accent-main, 30%);
     opacity: 0.4;
   }
-  
+
   &--b {
     margin-bottom: 0;
   }
 }
 
-.screen{
-    width:60%;
-    background:red;
-    height: 50%;
-    margin-top:25%;
-    margin-left: 20%;
-    border-radius: 2%;
-    background-color: $screen-white;
+.screen {
+  width: 60%;
+  background: red;
+  height: 50%;
+  margin-top: 25%;
+  margin-left: 20%;
+  border-radius: 2%;
+  background-color: $screen-white;
 
-    .creature{
+  .creature {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 
-      img{
-        width:100%;
-        height:100%;
-      }   
-    }
-
-    .screenLine--1{
-        width:100%;
-        height: 10%;
-        background:$screen-black;
-    }
-    .screenLine--2{
-        width:100%;
-        height: 10%;
-        background:$screen-black;
-        margin-top:-10%;
-        position: relative;
-    }
+  .screenLine--1 {
+    width: 100%;
+    height: 10%;
+    background: $screen-black;
+  }
+  .screenLine--2 {
+    width: 100%;
+    height: 10%;
+    background: $screen-black;
+    margin-top: -10%;
+    position: relative;
+  }
 }
-
